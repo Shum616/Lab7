@@ -23,7 +23,7 @@ public class User implements Serializable {
         return currentNumbers;
     }
 
-    public void createUser(MotherBase base) {
+    public void createUser(User base) {
         Scanner in = new Scanner(System.in);
         System.out.println("\t\t\tEnter user`s name: ");
         this.fullName = in.nextLine();
@@ -38,7 +38,7 @@ public class User implements Serializable {
         for (int i = 0; i < num; i++) {
             number1.createNumber();
             this.currentNumbers.add(number1);
-            base.AddNumber(number1);
+            base.getCurrentNumbers().add(number1);
             number1 = new Numbers();
         }
     }

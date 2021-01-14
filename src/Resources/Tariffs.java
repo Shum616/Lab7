@@ -44,6 +44,17 @@ public class Tariffs implements Serializable {
             this.stocks.add(stock);
         }
     }
+    public void createTariffs( int payment, int gbPerMonth, int minsForCountryOfResidence,
+            int minsForTheOtherCountries, int websFee, int Id){
+        this.Id= Id;
+        this.payment = payment;
+        this.gbPerMonth = gbPerMonth;
+        this.minsForCountryOfResidence = minsForCountryOfResidence;
+        this.minsForTheOtherCountries = minsForTheOtherCountries;
+        this.websFee = websFee;
+        ArrayList<String> stocks = new ArrayList<String>();
+        this.stocks= stocks;
+    }
 
     public void showTariff(){
         System.out.printf("Payment: %d\n" +

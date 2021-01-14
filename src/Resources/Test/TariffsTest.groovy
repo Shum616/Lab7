@@ -1,6 +1,6 @@
 package Resources.Test
 
-class TariffsTest extends GroovyTestCase {
+class TariffsTest {
     void testGetPayment() {
     }
 
